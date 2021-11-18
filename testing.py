@@ -46,48 +46,55 @@ class testing_polygon():
             test_table.add_row(["No arguments provided:", "empty",invalid + str(e) + endc])
         test_table.add_row(['','',''])
 
-
         try:
             features = p1.sides_length(6.2,8)
         except Exception as e:
             test_table.add_row(["Float input:", "N=6.2,L=8",invalid + str(e) + endc])
         test_table.add_row(['','',''])
+
         try:
             features=p1.sides_length(0,4)
         except Exception as e:
              test_table.add_row(["Zero no of sides:", "N=0,L=4",invalid + str(e) + endc])
         test_table.add_row(['','',''])
+
         try:
             features=p1.sides_length(2,8)
         except Exception as e:
              test_table.add_row(["2 sides:", "N=2,L=8",invalid + str(e) + endc])
         test_table.add_row(['','',''])
+
         try:
             features=p1.sides_length('abhishek',8)
         except Exception as e:
             test_table.add_row(["String input:", "N='abhishek',L=8",invalid + str(e) + endc])
         test_table.add_row(['','',''])
+
         try:
             features=p1.sides_length(-3,5)
         except Exception as e:
              test_table.add_row(["Negative input:", "N=-3,L=5",invalid + str(e) + endc])
         test_table.add_row(['','',''])
+
         try:
             features=p1.sides_length(6,0)
         except Exception as e:
             test_table.add_row(["Length of side:0", "N=6,L=0",invalid + str(e) + endc])
         test_table.add_row(['','',''])
+
         try:
             features=p1.sides_length(4,8)
             test_table.add_row([yellow+"Valid input:"+endc, "N=4,L=8",self.print_features(features)])
         except Exception as e:
             test_table.add_row(["Invalid input:", "N=4,L=8",invalid + str(e) + endc])
         test_table.add_row(['','',''])
+
         try:
             features=p1.sides_length(5,-44)
         except Exception as e:
              test_table.add_row(["Negative length of side:", "N=5,L=-44",invalid + str(e) + endc])
         test_table.add_row(['','',''])
+
         try:
             features=p1.sides_length(6,10)
             test_table.add_row([yellow+"Valid input"+endc, "N=6,L=10",self.print_features(features)])
@@ -123,6 +130,7 @@ class testing_polygon():
         except Exception as e:
             test_table.add_row(["Zero input(1):", "measure=0\u00b0,side=4",invalid + str(e) + endc])
         test_table.add_row(['','',''])
+
         try:
             p1.use_interior_angle(-12,8)
         except Exception as e:
