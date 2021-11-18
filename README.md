@@ -25,6 +25,8 @@
   <a href="#-acknowledgements">Acknowledgements</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
+<img alt="Layout" src="screenshots/test_function_1.png">
+
 ### 👨🏻‍💻 About The Project
 This is a testing tool for the Polygon Calculator. 
 
