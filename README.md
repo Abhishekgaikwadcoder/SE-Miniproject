@@ -8,7 +8,7 @@
 </h3>
 <img alt="GitHub top language" src="https://img.shields.io/badge/language-python3-brightgreen">
 
-##  👨🏻‍💻 About The Project
+### 👨🏻‍💻 About The Project
 This is a testing tool for the Polygon Calculator 
 
 ## 🌟 Features
@@ -32,7 +32,7 @@ This is a testing tool for the Polygon Calculator
     ```
 
 #### Usage:
-
+1. Type in the terminal:
     ```sh
     python3 testing.py
     ```
@@ -44,4 +44,5 @@ This is a testing tool for the Polygon Calculator
 
 
 ## 📝 Acknowledgements
-https://ptable.readthedocs.io/en/latest/tutorial.html
+
+1. Pretty Table tutorial: (https://ptable.readthedocs.io/en/latest/tutorial.html)
