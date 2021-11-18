@@ -155,7 +155,7 @@ class testing_polygon():
             test_table.add_row(["Invalid input:", "measure=108,side=6",invalid + str(e) + endc])
         try:
             features=p1.use_interior_angle(144,12)
-            test_table.add_row([yellow+"Valid input:"+endc, "measure=108\u00b0,side=6", valid + self.print_features(features) + endc])
+            test_table.add_row([yellow+"Valid input:"+endc, "measure=144\u00b0,side=12", valid + self.print_features(features) + endc])
         except Exception as e:
             test_table.add_row(["Invalid input:", "measure=108,side=6",invalid + str(e) + endc])
         
@@ -253,12 +253,12 @@ class testing_polygon():
         try:
             features=p1.irregular_polygon('a',2,2)
         except Exception as e:
-            test_table.add_row(["Data type invalid:","sides are 'a',2,2",invalid + str(e) + endc])
+            test_table.add_row(["Data type invalid:","sides are :'a', 2, 2",invalid + str(e) + endc])
         test_table.add_row(['','',''])
         try:
             features=p1.irregular_polygon(1,2,3)
         except Exception as e:
-            test_table.add_row(["Not a Triangle:", "sides are 1 ,2 ,3",invalid + str(e) + endc])
+            test_table.add_row(["Not a Triangle:", "sides are 1, 2, 3",invalid + str(e) + endc])
         test_table.add_row(['','',''])
         try:
             features=p1.irregular_polygon(3,3,3)
