@@ -28,7 +28,9 @@ class testing_polygon():
         f+=valid+'Area: '+str(features[1])+endc+'\n'
         f+=valid+'Perimeter: '+str(features[2])+endc+'\n'
         return f
-
+    
+    #Function contributed by MIS : 111903006
+    #Name : Abhishek Gaikwad
     def testing_using_sides(self):
 
         test_table = PrettyTable([blue + "TEST_CASE"+ endc, blue + "arguments" + endc,blue + "Output" + endc])
@@ -102,7 +104,9 @@ class testing_polygon():
              test_table.add_row(["Failed!", "N=6,L=10", invalid + str(e) + endc])
         print(test_table)
         return
-
+    
+    #function contributed by MIS : 111903007
+    #Name : Abhishek Dharmadhikari
     def testing_using_interior_angle(self):
         test_table = PrettyTable([blue + "TEST_CASE"+ endc, blue + "arguments" + endc,blue + "Output" + endc])
         test_table.align = 'l'
@@ -170,6 +174,8 @@ class testing_polygon():
         print(test_table)
         return
 
+    #function cotributed by : MIS : 111903006
+    #Name : Abhishek Gaikwad
     def testing_using_exterior_angle(self):
         p1 = polygon()
         test_table = PrettyTable([blue + "TEST_CASE"+ endc, blue + "arguments" + endc,blue + "Output" + endc])
@@ -231,7 +237,9 @@ class testing_polygon():
             test_table.add_row(["Invalid input:", "measure=72,side=8",invalid + str(e) + endc])
         print(test_table)
         return
-
+    
+    #function contributed by MIS : 111903007
+    #Name : Abhishek Dharmadhikari 
     def testing_using_irregular_polygon(self):
         test_table = PrettyTable([blue + "TEST_CASE"+ endc, blue + "arguments" + endc,blue + "Output" + endc])
         test_table.align = 'l'
@@ -304,7 +312,6 @@ class testing_polygon():
             test_table.add_row(["Negative input:", "sides are :4,-2,4,-2",invalid + str(e) + endc])
         test_table.add_row(['','',''])
         print(test_table)
-
 
 c = testing_polygon()
 def display_menu():

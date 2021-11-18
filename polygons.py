@@ -7,6 +7,7 @@ import math
 
 shapes = {3:'Equilateral Triangle',4:'Square',5:'Regular Pentagon',6:'Regular hexagon',7:'Regular heptagon',8:'Regular Octagon',9:'Regular Nonagon',10:'Regular Decagon'}
 
+#function Contributions added above each function_name
 class polygon:
 
     shape_predict=None
@@ -32,7 +33,8 @@ class polygon:
         self.interior_angle = 180 * (n-2)/n
         self.exterior_angle = 180 - self.interior_angle
         return
-
+    #This function Done by MIS :111903006 
+    #Name : Abhishek Gaikwad
     def sides_length(self,no_of_sides,length_of_side):
         if(not type(no_of_sides) is int):
             raise Exception('Invalid data type for no_of_sides:{}'.format(type(no_of_sides)))
@@ -56,6 +58,8 @@ class polygon:
             features[4]=self.exterior_angle
         return features
 
+    #this function Done by MIS :111903007
+    #Name: Abhishek Dharmadhikari
     def use_interior_angle(self,interior_angle,length_of_side):
         if(not type(interior_angle) is int and not type(interior_angle) is float):
             raise Exception('Interior angle should be integer or float.')
@@ -87,6 +91,8 @@ class polygon:
         features[4]=self.exterior_angle
         return features
 
+    #Function Done by MIS : 111903006
+    #Name : Abhishek Gaikwad
     def use_exterior_angle(self,exterior_angle,length_of_side):
         if(not type(exterior_angle) is int and not type(exterior_angle) is float):
             raise Exception('Exterior angle should be integer or float.')
@@ -111,6 +117,8 @@ class polygon:
         return features
 
     #Handled for triangle and rectangle
+    #Function Done by MIS : 111903007
+    #Name : Abhishek Dharmadhikari
     def irregular_polygon(self,*args):
         n = len(args)
         if(n in [0,1,2]):
