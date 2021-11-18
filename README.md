@@ -26,12 +26,12 @@
 </p>
 
 ### 👨🏻‍💻 About The Project
-This is a testing tool for the Polygon Calculator 
+This is a testing tool for the Polygon Calculator. 
 
 ## 🌟 Features
 
--   It predicts the shape of the polygon provided.
--   It show the features of respective polygon namely: **Area**, **Perimeter**, **Interior angle**, **Exterior angle**
+-   It predicts the shape of the polygon based on **no of sides**, **interior angle** and **exterior angle** provided by the **User**. 
+-   It show the features of respective polygon namely: **Area**, **Perimeter**, **Interior angle**, **Exterior angle**.
 
 
 ## 💻 Getting Started
@@ -56,7 +56,7 @@ This is a testing tool for the Polygon Calculator
     
 
 ## 🚀 Built With
-1. Prettytable : a Python library for generating simple ASCII tables
+1. Prettytable : a Python library for generating simple ASCII tables.
 2. python3
 
 
