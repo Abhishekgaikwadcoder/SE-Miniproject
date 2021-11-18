@@ -39,9 +39,9 @@ class polygon:
         if(not type(length_of_side) is float and not type(length_of_side) is int):
             raise Exception('Invalid data type for length_of_each_side:{}'.format(type(length_of_side)))
         elif(no_of_sides in [0,1,2,360]):
-            raise Exception('Polygon must have number of sides in [3,360).You entered',no_of_sides)
+            raise Exception ("Polygon must have number of sides in [3,360).You entered',no_of_sides")
         elif(no_of_sides < 0 or length_of_side<0):
-            raise Exception('Polygon cannot have negative number of sides.')
+            raise Exception("Polygon cannot have negative number of sides.")
         elif(length_of_side==0):
             raise Exception('Polygon cannot have side with length 0!')
         else:
